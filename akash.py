@@ -12,7 +12,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 
 
-google_api_key = "AIzaSyC7-ukc2GbSSvcNER9Z3RamqHuHYBcL-Og"
+google_api_key = "api key"
 
 model = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
@@ -267,3 +267,4 @@ if st.button("Generate Question with Answer"):
     chain1 = prompt1 | model | parser
     result1 = chain1.invoke({"topic": text})
     st.write(result1)
+
